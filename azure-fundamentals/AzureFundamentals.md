@@ -18,29 +18,29 @@ As a beginner, what you must start learning in azure?
         d. REST API
         e. Client SDKs
     V. Azure Core Services
-    VI. Azure compute
-        a. Virtual Machines
-        b. App Services
-        c. Azure Container Instances
-        d. Azure Kubernetes Service
-        e. ...
-    VII. Azure network services
-        a. Azure Virtual network and subnets
-        b. Azure Load balancer
-        c. VPN and VPN Gateway
-        d. Azure Application Gateway
-        e. CDN
-        f.  ...
-    VIII. Azure Storage
-        a. Disk Storage
-        b. Blob Storage (Containers and DataLake Gen2)
-        c. File Storage
-        d. Queues
-        e. Tables
-        f. ....
-    IX. Azure Databases
-        a. Azure SQL
-        b. Azure COSMOS DB
+        1. Azure compute
+            a. Virtual Machines
+            b. App Services
+            c. Azure Container Instances
+            d. Azure Kubernetes Service
+            e. ...
+        2. Azure network services
+            a. Azure Virtual network and subnets
+            b. Azure Load balancer
+            c. VPN and VPN Gateway
+            d. Azure Application Gateway
+            e. CDN
+            f.  ...
+        3. Azure Storage
+            a. Disk Storage
+            b. Blob Storage (Containers and DataLake Gen2)
+            c. File Storage
+            d. Queues
+            e. Tables
+            f. ....
+        4. Azure Databases
+            a. Azure SQL
+            b. Azure COSMOS DB
     X. Azure Solutions
     XI. Azure Market Place
 
