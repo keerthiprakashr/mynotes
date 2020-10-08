@@ -1,4 +1,58 @@
 # Azure Fundamentals
+As a beginner, what you must start learning in azure?
+
+    I. Azure Fundamentals
+        a. What is Azure?
+        b. IaaS, PaaS, SaaS, (and many more example Cluster as a service, Managed App as Service)
+        c. Azure Datacenter and Regions
+    II. Availability Options
+        a. Update Domain
+        b. Fault Domain
+        c. Availability Zones
+        d. Azure SLA
+    III. Azure resource groups
+    IV. Azure Resource Manager 
+        a. Azure portal
+        b. Microsoft Azure PowerShell
+        c. Azure Command-Line Interface (Azure CLI)
+        d. REST API
+        e. Client SDKs
+    V. Azure Core Services
+    VI. Azure compute
+        a. Virtual Machines
+        b. App Services
+        c. Azure Container Instances
+        d. Azure Kubernetes Service
+        e. ...
+    VII. Azure network services
+        a. Azure Virtual network and subnets
+        b. Azure Load balancer
+        c. VPN and VPN Gateway
+        d. Azure Application Gateway
+        e. CDN
+        f.  ...
+    VIII. Azure Storage
+        a. Disk Storage
+        b. Blob Storage (Containers and DataLake Gen2)
+        c. File Storage
+        d. Queues
+        e. Tables
+        f. ....
+    IX. Azure Databases
+        a. Azure SQL
+        b. Azure COSMOS DB
+    X. Azure Solutions
+    XI. Azure Market Place
+=================================
+Azure Database for MySQL
+Azure Redis cache
+Azure Cognitive Search
+Azure Notification Hubs
+Azure Service Bus
+Azure Functions
+Azure Monitor
+
+
 ## What is Azure? 
 
 The public cloud (in this case Azure) is computing services (servers, storage etc) offered by third-party providers (in this case Microsoft) over the public Internet.
