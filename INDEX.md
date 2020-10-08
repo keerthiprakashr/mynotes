@@ -1,6 +1,7 @@
 # mynotes
-Welcome to my notes, hands-on code, and blog posts.
 
+Welcome to my notes, hands-on code, and blog posts.
+## [About Me](https://www.linkedin.com/in/keerthi-prakash-raravi-00325121/)
 ## [Azure Fundamentals](azure-fundamentals/AzureFundamentals.md)
 ## [Azure IOT Central](azure-iot-central/AzureIOTCentral.md)
 #### See my [LinkedIn Post here](https://www.linkedin.com/pulse/azure-iot-central-how-different-from-hub-keerthi-prakash-raravi/?trackingId=aiziXZmR6CR6vGNrGELHAw%3D%3D)
