@@ -5,6 +5,7 @@ As a beginner, what you must start learning in azure?
         a. What is Azure?
         b. IaaS, PaaS, SaaS, (and many more example Cluster as a service, Managed App as Service)
         c. Azure Datacenter and Regions
+        d. How to use Microsoft documentation of Azure?
     II. Availability Options
         a. Update Domain
         b. Fault Domain
@@ -77,15 +78,28 @@ Private clouds require the same staffing, management, and maintenance expenses a
 
 Public Cloud + Private Cloud
 
+References :
+
+1. [Cloud Computing](https://azure.microsoft.com/en-in/overview/choosing-a-cloud-service-provider/)
+
+2. [How do I choose Cloud Service Provider?](https://azure.microsoft.com/en-in/overview/choosing-a-cloud-service-provider/)
+
+
 ### Characteristics of Cloud Computing
 1. Elasticity
 2. Resiliency and availability
-3.  Resource Sharing between multiple tenants
+3. Resource Sharing between multiple tenants
 4. On-Demand
 5. Self Service
 6. Pay only for what is used 
 7. Security
 8. Available over internet
+
+### IaaS, PaaS and SaaS
+
+
+
+![IaaS - PaaS - SaaS](resources/iaas-paas-saas.png)
 
 ### Datacenters and Regions
 Azure datacenters are organized as regions. 
@@ -102,8 +116,8 @@ Read about Azure special Regions [here](https://docs.microsoft.com/en-us/azure/v
 ## Availability Options
 
 ### Availability sets
-1. Update domains (UD) 
-2. Fault domains (FD)
+1. Update domains (UD)  
+2. Fault domains (FD) 
 
 ![Fault Domain and Update Domain](resources/FaultDomainUpdateDomain.png)
 
@@ -118,3 +132,18 @@ You can see the Azure SLA [here](https://azure.microsoft.com/en-us/support/legal
 
 ### Azure Resource groups
 
+What is a resource group? Read [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
+
+### Azure Resource Manager 
+        a. Azure portal
+        b. Microsoft Azure PowerShell
+        c. Azure Command-Line Interface (Azure CLI)
+        d. REST API
+        e. Client SDKs
+
+![resources/AzureResourceManager.png](resources/AzureResourceManager.png)
+
+  
+  
+   
+## Directory of azure services [Link](https://azure.microsoft.com/en-in/services/)
