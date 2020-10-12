@@ -9,3 +9,5 @@ Welcome to my notes, hands-on code, and blog posts.
 ## 5. [How to calculate Design Availability of Software Application](https://www.linkedin.com/pulse/how-calculate-design-availability-software-keerthi-prakash-raravi/?trackingId=a31AdETCSKQhpXJBDMBl4Q%3D%3D) 
 
 ## 6. [Azure Active Directory: App Developer perspective](azure-active-directory/aad.md)
+
+## 7. [Kubernetes Operators](kubernetes-operators/kubernetes-operators.md)
