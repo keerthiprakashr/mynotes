@@ -1,4 +1,4 @@
-# mynotes
+# My Notes
 
 Welcome to my notes, hands-on code, and blog posts. To know about me, you can see my linked profile by clicking [here](https://www.linkedin.com/in/keerthi-prakash-raravi-00325121/)
 
