@@ -1,6 +1,6 @@
 # 1. Azure Active Directory: App Developer perspective
 
-There is ovewhelming amount of infomation on avaialble on Azure Active Directory. App developers often get lost in the ocean of documents and references are available.
+There is ovewhelming amount of infomation on avaialble on Azure Active Directory. App developers often get lost in the ocean of documents and references.
 
 In this post I am trying to list links where Application developers can find information of what they need quickly. In this post I am focussing only from application developers point of view only!
 
