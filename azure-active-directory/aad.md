@@ -1,48 +1,52 @@
 # 1. Azure Active Directory: App Developer perspective
 
-There is ovewhelming amount of infomation on avaialble on Azure Active Directory. App developers often get lost in the ocean of documents and references.
+There is an overwhelming amount of information available on the Azure Active Directory(Azure AD/AAD). App developers often get lost in the ocean of documents and references. 
+Here, I am documenting knowledge of Azure AD required for application developers and Software Architects.  
 
-In this post I am trying to list links where Application developers can find information of what they need quickly. In this post I am focussing only from application developers point of view only!
+# 2. Azure AD Big Picture
 
-# 2. Below are the links to few topics to understand the big picture of Azure AD
-
-> * Introduction of Azure AD : https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis
+> * Introduction to Azure AD : https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis
 > 
 > * Terminology : https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis#terminology
 > 
-> * Features Of Azure Active Directory : https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis#which-features-work-in-azure-ad
+> * Features Of Azure AD : https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis#which-features-work-in-azure-ad
 > 
 > * Azure AD Licenses : https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses
 
 ## 2.1. Uses of Azure Active Directory
 1. Authentication and Authorization of Users. 
-    * Example: Login for mobile app, custome website, desktop app etc..
+    * Example: Login for mobile app, custom website, desktop app, etc..
 
 2. Service to Service A&A
-    * Allowing a secure access of Azure SQL server without password from a app hosted in Azure
+    * Allowing a secure access of Azure SQL server without password from an app hosted in Azure
 
 3. Manage access to Azure Resources
-    Example : Azure Portal, Azure CLI, Powershell, APIs
+    Example: Azure Portal, Azure CLI, Powershell, APIs
 
-4. And Many more : see the list here https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis#who-uses-azure-ad
+4. And Many more: see the list here https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis#who-uses-azure-ad
 
 
-# 3. A&A Protocols
-It is important to understand the below state of the art A&A protocols. These protocols are independent of Azure AD. There are many more protocols in use, below two are good to start with.
+# 3. Authentication and Authorization(A&A) Protocols
+
+It is essential to understand the below state of the art A&A protocols.
+
+These protocols are independent of Azure AD. There are many more protocols in use, but the below two are good to start.
  
-Note: There are SDKs available both from Microsoft and even from open source, which implement the protocols and flows. Developers need not to implement all this ground up. These SDKs are avaialble in multiple programming langauges. Links at the end of this page.
+Note that there are SDKs available both from Microsoft and even from open source, which implement the protocols and flows. Developers need not implement all this ground up. These SDKs are available in multiple programming languages. Find links at the end of this page.
  
-* Microsoft Identity platform: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview
+* Read about Microsoft Identity platform [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview)
  
-In the above link you can also see a graphics which helps identity right SDKs for most common app scenarios.
+In the above link, you can also see graphics that help identify the right SDKs for most common app scenarios.
  
 ```
+Protocols 
+ 
 a) OAuth2 and OpenIdConnect
 b) SAML 2.0
 
 ```
 ## 3.1. OAuth2 and OpenID Connect Protocols 
- To understand OAuth2 and OpenId connect protocols one must start with understanding of below terminology and protocol flow.
+ To understand OAuth2 and OpenId connect protocols, one must start with an understanding of the below terminology and protocol flow.
 
 ### 3.1.1. Roles as defined in specifications:
 * Resource owner :
@@ -62,26 +66,26 @@ b) SAML 2.0
       The server issuing access tokens to the client after successfully
       authenticating the resource owner and obtaining authorization.
 
-* Security Tokens, JWTs and Claims : Please read and make it clear for yourself the what is JWT. This is independent of A&A protocols. Read about JWT [here](https://auth0.com/learn/json-web-tokens/).
-
-* Read about HTTP Authorization header
+* Security Tokens, JWTs and Claims, HTTP Authorization header:  These are independent of A&A protocols. Read about JWT [here](https://auth0.com/learn/json-web-tokens/).
       
 >       References : 
->         * Specifications read [here](https://tools.ietf.org/html/rfc6749)
->         * Find more readable content, books and videos [here](https://oauth.net/2/)
->         * JWT read [here](https://auth0.com/learn/json-web-tokens/)
+>         * Specifications: https://tools.ietf.org/html/rfc6749
+>         * Find more readable content, books, and videos: https://oauth.net/2/
+>         * JWT : https://auth0.com/learn/json-web-tokens/)
+>         * HTTP Authorization header: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization
 
 ### 3.1.2. Application Types
-* Based on whether the _client_ app is Web App, Mobile app, desktop app or a web api, they must be secured differently. So the protocol flow differs slightly between them. 
+* Based on whether the _client_ app is Web App, Mobile app, a desktop app, or a web API, they must be secured differently. So the protocol flow differs slightly between them. 
  
-* Specification defines two types of clients based on the ability to maintain the confidentiality of client credentials(secretes). They are confidential and public clients.
+* Specification defines two types of _clients_ based on the ability to maintain the confidentiality of client credentials(secretes). They are confidential and public clients.
  
-* Based above definitation in spec, _client_ applications can be categorized as below.
->     1. Single Page App (SPA) : These are browser Javascript based apps
->     2. Public client App : Desktop, Mobile, and other devices natively without a browser.
->     3. Confidential client App : Web App backend server and Web APIs.
+* Based above definition in spec, _client_ applications can be categorized as below.
+
+>     1. Single Page App (SPA): These are browser Javascript based apps.
+>     2. Public client App: Desktop, Mobile, and other devices natively without a browser.
+>     3. Confidential client App: Web App backend server and Web APIs.
   
-> Read more on the types of applications from microsoft docs [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-flows-app-scenarios#single-page-public-client-and-confidential-client-applications)
+> Reference: The types of applications from Microsoft docs [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-flows-app-scenarios#single-page-public-client-and-confidential-client-applications)
 
 ### 3.1.3 OAuth2&OpenIDConnect flows
 
@@ -95,29 +99,29 @@ Below are the different flows
 
 ## 3.2 SAML 2.0 (Security Assertion Markup Language 2.0)
 
-The Security Assertion Markup Language (SAML), developed by the Security Services Technical Committee of [OASIS](https://www.oasis-open.org/org). SAML V2.0 is formally approved as an OASIS Standard in March 2005. Specifications can be downloaded as zip file [here](http://docs.oasis-open.org/security/saml/v2.0/saml-2.0-os.zip).
+The Security Assertion Markup Language (SAML) is developed by the Security Services Technical Committee of [OASIS](https://www.oasis-open.org/org). SAML V2.0 was formally approved as an OASIS Standard in March 2005. Specifications can be downloaded as zip file [here](http://docs.oasis-open.org/security/saml/v2.0/saml-2.0-os.zip).
 
 How Azure AD uses SAML 2.0 can be read [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-saml-protocol-reference).
 
 # 4. Single-Sign-On(SSO)
 
-SSO is improves user expirience by avoid to ask user to login separately in to every application of the organization.
+SSO is a way to improve user experience by avoiding asking users to log-in separately into every application of the organization.
 
-SSO can be achieved using any of the protocols like SAML 2.0 or OpenID Connect or Integrated Windows Authentication. 
+SSO can be achieved by using any of the protocols like SAML 2.0 or OpenID Connect, or Integrated Windows Authentication. 
 
-* To plan SSO deployment, refer [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/plan-sso-deployment).
+* To plan for SSO deployment, refer [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/plan-sso-deployment).
 
 * SSO Options [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/sso-options)
 
-* To Choose a right method, refer [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/sso-options#choosing-a-single-sign-on-method)
+* To choose the right SSO method, refer [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/sso-options#choosing-a-single-sign-on-method)
 
-* SSO for apps using SAML, refer [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/sso-options#saml-sso). Note: this is used in case Forms Authentication, which does not implement above two protocols.
+* SSO for apps using SAML, refer [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/sso-options#saml-sso). Note: this method is used in the case of forms Authentication, which does not implement any of the above two protocols.
 
 * Integrated Windows Authentication (IWA) SSO is for an on-premise application. Refer [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/sso-options#integrated-windows-authentication-iwa-sso). 
 
 * Password based SSO, refer [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/sso-options#password-based-sso). This is in case 
 
-* OAuth2 and OpenIdConnect is the recomended method for new apps. Read [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/sso-options#openid-connect-and-oauth).
+* OAuth2 and OpenIdConnect is the recommended method for new apps. Read [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/sso-options#openid-connect-and-oauth).
 
 * For Linked sign-on, refer [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-linked-sign-on).
 
