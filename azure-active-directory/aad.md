@@ -148,5 +148,13 @@ Refer https://docs.microsoft.com/en-us/azure/active-directory/develop/active-dir
 
 Refer https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview
 
+# 9. Further Reading
+* Hybrid Identity read [here](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-hybrid-identity?toc=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Factive-directory%2Fhybrid%2Ftoc.json&bc=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fbread%2Ftoc.json)
+
+* Azure AD Federation: https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-fed
+
+* Azure AD Connect Sync: https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-whatis
+
+* Azure B2C: https://docs.microsoft.com/en-us/azure/active-directory-b2c/overview
 
 
