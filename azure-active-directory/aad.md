@@ -1,7 +1,7 @@
 # 1. Azure Active Directory: App Developer perspective
 
-There is an overwhelming amount of information available on the Azure Active Directory(Azure AD/AAD). App developers often get lost in the ocean of documents and references. 
-
+Azure Active Directory(Azure AD/AAD) is one of the most complex, feature-rich, and widely used service.
+There is an overwhelming amount of information available on the Azure Active Directory. Often application developers and architects lose track of this ocean of information.
 Here, I have attempted to put together information on Azure AD required for application developers and Software Architects.  
 
 # 2. Azure AD Big Picture
