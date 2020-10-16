@@ -1,5 +1,5 @@
-# Azure Fundamentals
-As a beginner, what you must start learning in azure?
+# 1. Azure Fundamentals TOC
+As a beginner, what you must start learning in Azure?
 
     I. Azure Fundamentals
         a. What is Azure?
@@ -65,16 +65,16 @@ Further:
 
 
 
-## What is Azure? 
+# 2. What is Azure? 
 
-The public cloud (in this case Azure) is computing services (servers, storage etc) offered by third-party providers (in this case Microsoft) over the public Internet.
+The public cloud (in this case Azure) is computing services (servers, storage, etc) offered by third-party providers (in this case Microsoft) over the public Internet.
 
-### Private Cloud (internal or corporate cloud)
+## 2.1. Private Cloud (internal or corporate cloud)
 The private cloud is defined as computing services offered either over the Internet or a private internal network and only to select users instead of the general public.
 
 Private clouds require the same staffing, management, and maintenance expenses as traditional datacenter ownership.
 
-### Hybrid Cloud
+## 2.2. Hybrid Cloud
 
 Public Cloud + Private Cloud
 
@@ -85,7 +85,7 @@ References :
 2. [How do I choose Cloud Service Provider?](https://azure.microsoft.com/en-in/overview/choosing-a-cloud-service-provider/)
 
 
-### Characteristics of Cloud Computing
+# 3. Characteristics of Cloud Computing
 1. Elasticity
 2. Resiliency and availability
 3. Resource Sharing between multiple tenants
@@ -95,46 +95,46 @@ References :
 7. Security
 8. Available over internet
 
-### IaaS, PaaS and SaaS
+# 4. IaaS, PaaS and SaaS
 
 
 
 ![IaaS - PaaS - SaaS](resources/iaas-paas-saas.png)
 
-### Datacenters and Regions
+# 5. Datacenters and Regions
 Azure datacenters are organized as regions. 
 A Region is a geographical area containing at least one, usually multiple datacenters that are in close proximity and networked together with a low-latency network.
-List of Azure regions can be see [here](https://azure.microsoft.com/en-us/global-infrastructure/geographies/)
+* A list of Azure regions can be seen [here](https://azure.microsoft.com/en-us/global-infrastructure/geographies/)
 
-Read more about Azure regions [here](https://docs.microsoft.com/en-us/azure/virtual-machines/regions)
+* Read more about Azure regions [here](https://docs.microsoft.com/en-us/azure/virtual-machines/regions)
 
-Read about Regional Pairs [here](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions#what-are-paired-regions?azure-portal=true)
+* Read about Regional Pairs [here](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions#what-are-paired-regions?azure-portal=true)
 
-Read about Azure special Regions [here](https://docs.microsoft.com/en-us/azure/virtual-machines/regions#special-azure-regions)
+* Read about Azure special Regions [here](https://docs.microsoft.com/en-us/azure/virtual-machines/regions#special-azure-regions)
 
 
-## Availability Options
+# 6. Availability Options
 
-### Availability sets
+## 6.1. Availability sets
 1. Update domains (UD)  
 2. Fault domains (FD) 
 
 ![Fault Domain and Update Domain](resources/FaultDomainUpdateDomain.png)
 
-### Availability Zones
+## 6.2. Availability Zones
 
 ![ Availability Zones](resources/AvailabilityZones.png)
 
 
-### Azure SLA
+## 6.3. Azure SLA
 You can see the Azure SLA [here](https://azure.microsoft.com/en-us/support/legal/sla/summary/)
 
 
-### Azure Resource groups
+# 7. Azure Resource groups
 
 What is a resource group? Read [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
 
-### Azure Resource Manager 
+# 8. Azure Resource Manager 
         a. Azure portal
         b. Microsoft Azure PowerShell
         c. Azure Command-Line Interface (Azure CLI)
@@ -144,6 +144,7 @@ What is a resource group? Read [here](https://docs.microsoft.com/en-us/azure/azu
 ![resources/AzureResourceManager.png](resources/AzureResourceManager.png)
 
   
+# 
   
    
-## Directory of azure services [Link](https://azure.microsoft.com/en-in/services/)
+# 9. Directory of Azure services: https://azure.microsoft.com/en-in/services/
