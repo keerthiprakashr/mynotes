@@ -16,6 +16,7 @@ An Operator is software that encodes this domain knowledge and extends the Kuber
 
 
 References:
+* A Case for Databases on Kubernetes https://thenewstack.io/a-case-for-databases-on-kubernetes-from-a-former-skeptic/
 
 * Operator Pattern https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
 
