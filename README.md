@@ -17,3 +17,6 @@ As an absolute beginner of azure, start [here](azure-fundamentals/AzureFundament
 
 ## 6. Kubernetes Operators
 * [What are Kubernetes Operators?](kubernetes-operators/kubernetes-operators.md)
+
+## 7. NFRs: Performance and Cost optimization
+* [NFRs: Performance and Cost optimization]()
