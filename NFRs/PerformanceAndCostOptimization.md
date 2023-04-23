@@ -3,7 +3,7 @@ Recently I worked on the performance and cost optimization of one of our core Sa
 After deep dive with the operations team, I understood that the operations team had already taken all possible steps to optimize the cost. So, my next step was to consider architecture and design and fresh implementation. In principle, all stakeholders supported the decision there were also concerns about performance and scalability.
 
 # Existing Implementation:
-        Below is a simplified diagram (perhaps overly simplified!) of the existing architecture. Please note that I have omitted some components of the subsystem for the sake of simplicity and confidentiality.
+##### Below is a simplified diagram (perhaps overly simplified!) of the existing architecture. Please note that I have omitted some components of the subsystem for the sake of simplicity and confidentiality.
 
 ![existing](resources/existing_diagram.jpg)
   
