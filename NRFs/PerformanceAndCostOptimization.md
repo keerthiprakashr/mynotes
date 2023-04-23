@@ -3,7 +3,7 @@ After deep dive with the operations team, I understood that the operations team 
 Existing Implementation:
 Below is a simplified diagram (perhaps overly simplified!) of the existing architecture. Please note that I have omitted some components of the subsystem for the sake of simplicity and confidentiality.
 
-Note: <image here>
+    Note: <image here>
   
   The key architectural aspects of the sub-system are as follows:
 1.	The device-to-cloud communication does not use MQTT; rather, it employs a domain-specific protocol, which rules out the use of Azure IoT Hub.
