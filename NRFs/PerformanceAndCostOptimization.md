@@ -19,7 +19,7 @@ I got started with a technical POC with the following objectives:
 To meet the NFRs, we needed to re-architect the system. Given the system's scale, selecting an efficient technology stack was crucial. Therefore, we evaluated the C-stack version of the third-party communication driver and chose to use Golang as a wrapper, which provides Goroutines concurrency capabilities to spin off multiple instances for improved performance. In addition, we selected Timescale (PostgreSQL) as the telemetry database.
 The new architecture is as follows:
 
-![new](resources/new.jpg)
+![new](resources/new.png)
     
     
     Note: For simplicity and confidentiality reasons, not all components of the subsystem have been included in the diagram.
