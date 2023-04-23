@@ -19,4 +19,4 @@ As an absolute beginner of azure, start [here](azure-fundamentals/AzureFundament
 * [What are Kubernetes Operators?](kubernetes-operators/kubernetes-operators.md)
 
 ## 7. NFRs: Performance and Cost optimization
-* [NFRs: Performance and Cost optimization](NRFs/PerformanceAndCostOptimization.md)
+* [NFRs: Performance and Cost optimization](NFRs/PerformanceAndCostOptimization.md)
