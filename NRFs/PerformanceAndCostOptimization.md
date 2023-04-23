@@ -2,7 +2,8 @@ Recently I worked on the performance and cost optimization of one of our core Sa
 After deep dive with the operations team, I understood that the operations team had already taken all possible steps to optimize the cost. So, my next step was to consider architecture and design and fresh implementation. In principle, all stakeholders supported the decision there were also concerns about performance and scalability.
 Existing Implementation:
 Below is a simplified diagram (perhaps overly simplified!) of the existing architecture. Please note that I have omitted some components of the subsystem for the sake of simplicity and confidentiality.
-<image here>
+
+Note: <image here>
   
   The key architectural aspects of the sub-system are as follows:
 1.	The device-to-cloud communication does not use MQTT; rather, it employs a domain-specific protocol, which rules out the use of Azure IoT Hub.
@@ -18,7 +19,7 @@ I got started with a technical POC with the following objectives:
 To meet the NFRs, we needed to re-architect the system. Given the system's scale, selecting an efficient technology stack was crucial. Therefore, we evaluated the C-stack version of the third-party communication driver and chose to use Golang as a wrapper, which provides Goroutines concurrency capabilities to spin off multiple instances for improved performance. In addition, we selected Timescale (PostgreSQL) as the telemetry database.
 The new architecture is as follows:
 
-  <Image here>
+    Note: <Image here>
     
     
     Note: For simplicity and confidentiality reasons, not all components of the subsystem have been included in the diagram.
